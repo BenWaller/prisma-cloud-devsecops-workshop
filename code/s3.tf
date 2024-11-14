@@ -6,9 +6,16 @@ resource "aws_s3_bucket" "dev_s3" {
   bucket_prefix = "dev-"
 
   tags = {
-    Environment = "Dev"
-    yor_name    = "dev_s3"
-    yor_trace   = "913b93c7-3062-4aed-90bd-59468b87343f"
+    Environment          = "Dev"
+    yor_name             = "dev_s3"
+    yor_trace            = "913b93c7-3062-4aed-90bd-59468b87343f"
+    git_commit           = "912853124704e52343154ca4d07f4bf2bd697190"
+    git_file             = "code/s3.tf"
+    git_last_modified_at = "2024-11-14 23:40:36"
+    git_last_modified_by = "BenjaminMarkWaller@gmail.com"
+    git_modifiers        = "BenjaminMarkWaller"
+    git_org              = "BenWaller"
+    git_repo             = "prisma-cloud-devsecops-workshop"
   }
 }
 
